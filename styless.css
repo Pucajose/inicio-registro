@@ -1,0 +1,153 @@
+/*estilos generales*/
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../imagenes/images3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;/*evita que se repita el fondo*/
+    background-position: center;
+    background-attachment: fixed; /*avarca todo el alto y ancho de la pagina*/
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;/*tenemos varios formularios para que esten uno al lado del otro*/    
+    justify-content: center;
+    backdrop-filter: blur(10px);/**/
+    background-color: rgba(0, 128, 255, 0.5 );
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;/*pequeña transicion cuando se hace algun movimiento*/
+} 
+
+.caja__trasera div p{
+    margin-top: 30px;
+}
+.caja__trasera div button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+/*Diseñamos el boton*/
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: all 300ms;
+}
+
+/*cuando pasemos el cursor por encima del boton cambie su color*/
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+/*trabajamos con los formularios*/
+.contenedor__login-register{
+    display: flex;/*separa los formularios y los posicione de verticalmente*/
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;/*se posiciona en el centro*/
+    left: 10px;
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;/*para que sea movible*/
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;/*espaciado entre el input y el texto*/
+    color: #46A2FD;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: white;
+    cursor: pointer;
+}
+
+/*cambio del formulario en transicion*/
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+/*responsive design */
+@media screen and(max-width: 850px){
+    main{
+        margin-top: 50px;
+    }
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+    color: #46A2FD;
+}

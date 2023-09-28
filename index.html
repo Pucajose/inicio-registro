@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>Página de Registro e Inicio de Sesión</title>
+</head>
+<body>
+    <h2 class="titulo">CONVO WEB</h2>
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Iniciar sesion para continuar</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesion</p>
+                    <button id="btn__registrase">Registrase</button>
+                </div>
+            </div>
+            <!--son los formularios para el logeo y registro-->
+            <div class="contenedor__login-register">
+                <!--formulario de logeo-->
+                <form action="" class="formulario__login">
+                    <h2>Iniciar sesion</h2>
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Ingresar</button>
+                </form>
+                <!--formulario de registro-->
+                <form action="" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="date">
+                    <button>Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
